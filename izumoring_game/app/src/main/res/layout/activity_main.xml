@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <com.github.mmin18.widget.FlexLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cap_circle_sankou"
+            android:clickable="false"
+            app:layout_centerX="50%"
+            app:layout_centerY="50%"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.85" />
+
+
+        <!-- 2 ガラクチトール -->
+        <Button
+            android:id="@+id/button28"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="28"
+            app:layout_centerX="50%"
+            app:layout_centerY="50%-(this.height/2)"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!-- 3 アリトール-->
+        <Button
+            android:id="@+id/button30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="30"
+            app:layout_centerX="50%"
+            app:layout_centerY="50%+(this.height/2)"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button27"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="27"
+            app:layout_bottom="button28.top"
+            app:layout_height="this.width"
+            app:layout_left="button28.right"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="26"
+            app:layout_bottom="button28.top"
+            app:layout_height="this.width"
+            app:layout_right="button28.left"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button33"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="33"
+            app:layout_height="this.width"
+            app:layout_left="button30.right"
+            app:layout_top="button30.bottom"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button32"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="32"
+            app:layout_height="this.width"
+            app:layout_right="button30.left"
+            app:layout_top="button30.bottom"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="25"
+            app:layout_bottom="button27.top - 4dp"
+            app:layout_centerX="50%"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="17"
+            app:layout_bottom="button25.bottom"
+            app:layout_height="this.width"
+            app:layout_right="button25.left - 6dp"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="18"
+            app:layout_bottom="button25.bottom"
+            app:layout_height="this.width"
+            app:layout_left="button25.right + 6dp"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button34"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="34"
+            app:layout_centerX="50%"
+            app:layout_height="this.width"
+            app:layout_top="button33.bottom + 4dp"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="24"
+            app:layout_height="this.width"
+            app:layout_left="button34.right + 6dp"
+            app:layout_top="button34.top"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="29"
+            app:layout_centerY="50%"
+            app:layout_height="this.width"
+            app:layout_right="button26.left - 12dp"
+            app:layout_width="parent.width * 0.1" />
+
+        <!-- L-タガトース 青 -->
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="19"
+            app:layout_bottom="button29.top - 6dp"
+            app:layout_height="this.width"
+            app:layout_right="button29.right"
+            app:layout_width="parent.width * 0.1" />
+
+        <!-- L-プシコース 青 -->
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="21"
+            app:layout_height="this.width"
+            app:layout_right="button29.right"
+            app:layout_top="button29.bottom + 6dp"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--D-タリトール、D-アルトリトール 黄色-->
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="31"
+            app:layout_centerY="50%"
+            app:layout_height="this.width"
+            app:layout_left="button27.right + 12dp"
+            app:layout_width="parent.width * 0.1" />
+
+        <!-- Dプシコース 青 -->
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="20"
+            app:layout_bottom="button31.top - 6dp"
+            app:layout_height="this.width"
+            app:layout_right="button31.right"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--D-タガトース 青 -->
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="22"
+            app:layout_height="this.width"
+            app:layout_right="button31.right"
+            app:layout_top="button31.bottom + 6dp"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--Dアルトロース　赤 -->
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="5"
+            app:layout_centerX="50% + parent.width * 0.425 * 0.980785"
+            app:layout_centerY="50% - parent.width * 0.425 * 0.19509"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--Dアロース　赤　-->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="4"
+            app:layout_centerX="50% + parent.width * 0.425 * 0.83147"
+            app:layout_centerY="50% - parent.width * 0.425 * 0.55557"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--Dマンノース　赤-->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="3"
+            app:layout_centerX="50% + parent.width * 0.425 * 0.55557"
+            app:layout_centerY="50% - parent.width * 0.425 * 0.83147"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--Dグルコース 赤-->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="2"
+            app:layout_centerX="50% + parent.width * 0.425 * 0.19509"
+            app:layout_centerY="50% - parent.width * 0.425 * 0.980785"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!-- L-グロース 赤 x214-->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="1"
+            app:layout_centerX="50% - parent.width * 0.425 * 0.19509"
+            app:layout_centerY="50% - parent.width * 0.425 * 0.980785"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--L-イドース 赤 x304-->
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="16"
+            app:layout_centerX="50% - parent.width * 0.425 * 0.55557"
+            app:layout_centerY="50% - parent.width * 0.425 * 0.83147"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--Lガラクトース 赤 x309-->
+
+        <!--L-アルトロース　赤-->
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="13"
+            app:layout_centerX="50% - parent.width * 0.425 * 0.980785"
+            app:layout_centerY="50% + parent.width * 0.425 * 0.19509"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--L-アロース 赤-->
+
+        <!-- L-マンノース 赤-->
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="11"
+            app:layout_centerX="50% - parent.width * 0.425 * 0.55557"
+            app:layout_centerY="50% + parent.width * 0.425 * 0.83147"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!-- L-グルコース -->
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="10"
+            app:layout_centerX="50% - parent.width * 0.425 * 0.19509"
+            app:layout_centerY="50% + parent.width * 0.425 * 0.980785"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!-- D-グロース 赤 -->
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="9"
+            app:layout_centerX="50% + parent.width * 0.425 * 0.19509"
+            app:layout_centerY="50% + parent.width * 0.425 * 0.980785"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!-- D-イドース 赤 -->
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="8"
+            app:layout_centerX="50% + parent.width * 0.425 * 0.55557"
+            app:layout_centerY="50% + parent.width * 0.425 * 0.83147"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!-- Dガラクトース 赤 -->
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="7"
+            app:layout_centerX="50% + parent.width * 0.425 * 0.83147"
+            app:layout_centerY="50% + parent.width * 0.425 * 0.55557"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <!--D-タロース　赤　-->
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="6"
+            app:layout_centerX="50% + parent.width * 0.425 * 0.980785"
+            app:layout_centerY="50% + parent.width * 0.425 * 0.19509"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="12"
+            app:layout_centerX="50% - parent.width * 0.425 * 0.83147"
+            app:layout_centerY="50% + parent.width * 0.425 * 0.55557"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="14"
+            app:layout_centerX="50% - parent.width * 0.425 * 0.980785"
+            app:layout_centerY="50% - parent.width * 0.425 * 0.19509"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="15"
+            app:layout_centerX="50% - parent.width * 0.425 * 0.83147"
+            app:layout_centerY="50% - parent.width * 0.425 * 0.55557"
+            app:layout_height="this.width"
+            app:layout_width="parent.width * 0.1" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cap_circle_white"
+            android:onClick="change"
+            android:tag="23"
+            app:layout_height="this.width"
+            app:layout_right="button34.left - 6dp"
+            app:layout_top="button34.top"
+            app:layout_width="parent.width * 0.1" />
+
+    </com.github.mmin18.widget.FlexLayout>
+
+    <Button
+        android:id="@+id/owa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="result"
+        android:text="result" />
+</RelativeLayout>

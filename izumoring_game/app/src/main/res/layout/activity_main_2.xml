@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="k.satake.android.izumoring_game.MainActivity">
+
+
+    <!--ボタンの配置の参考用-->
+    <Button
+        android:id="@+id/orange"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/cap_circle_sankou"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"/>
+    <Button
+        android:id="@+id/mizuiro"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:background="#8BC34A"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"/>
+
+    <!--中央172,235-->
+
+
+    <!--Lの領域-->
+
+    <!-- L-グロース　赤 x214-->
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_marginBottom="19dp"
+        android:layout_alignBottom="@+id/button16"
+        android:layout_toLeftOf="@+id/d_Glucitol__l_Gulitol"
+        android:layout_toStartOf="@+id/d_Glucitol__l_Gulitol"
+        android:onClick="change"/>
+
+    <!--L-ソルボース 青　-->
+    <Button
+        android:id="@+id/l_Sorbose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button15"
+        android:layout_toEndOf="@+id/button19"
+        android:layout_toRightOf="@+id/button19"
+        android:background="@drawable/cap_circle_white" />
+
+    <!--L-イドース 赤 x304-->
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_alignTop="@+id/orange"
+        android:layout_toRightOf="@+id/button12"
+        android:layout_toEndOf="@+id/button12" />
+
+
+    <!--Lガラクトース　赤　x309-->
+    <Button
+        android:id="@+id/l_Galactose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/mizuiro"
+        android:layout_toLeftOf="@+id/button19"
+        android:layout_toStartOf="@+id/button19"
+        android:background="@drawable/cap_circle_white" />
+
+
+
+    <!-- L-イディトール　黄色　-->
+    <Button
+        android:id="@+id/l_Iditol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_above="@+id/galactitol"
+        android:layout_toLeftOf="@+id/galactitol"
+        android:layout_toStartOf="@+id/galactitol" />
+
+    <!-- L-タロース　赤 x339-->
+
+    <!-- L-タガトース 青　-->
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_alignBaseline="@+id/button20"
+        android:layout_alignBottom="@+id/button20"
+        android:layout_toLeftOf="@+id/l_Fructose"
+        android:layout_toStartOf="@+id/l_Fructose" />
+
+    <!-- L-タリトール、L-アルトリトール　黄色　-->
+    <Button
+        android:id="@+id/l_Talitol__l_Altritol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_alignBaseline="@+id/d_Altritol__d_Talitol"
+        android:layout_alignBottom="@+id/d_Altritol__d_Talitol"
+        android:layout_toRightOf="@+id/button14"
+        android:layout_toEndOf="@+id/button14" />
+
+    <!--L-アルトロース　赤-->
+    <Button
+        android:id="@+id/butoon10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/l_Talitol__l_Altritol"
+        android:layout_toLeftOf="@+id/l_Talitol__l_Altritol"
+        android:layout_toStartOf="@+id/l_Talitol__l_Altritol"
+        android:background="@drawable/cap_circle_white" />
+
+    <!-- L-プシコース　青　-->
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_above="@+id/l_Fructose"
+        android:layout_alignLeft="@+id/mizuiro"
+        android:layout_alignStart="@+id/mizuiro" />
+
+    <!--L-アロース 赤-->
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_below="@+id/button21"
+        android:layout_toLeftOf="@+id/button19"
+        android:layout_toStartOf="@+id/button19" />
+
+
+    <!-- L-マン二トール　黄色　-->
+    <Button
+        android:id="@+id/l_Mannitol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/allitol"
+        android:layout_toLeftOf="@+id/allitol"
+        android:layout_toStartOf="@+id/allitol"
+        android:background="@drawable/cap_circle_white" />
+
+    <!-- L-マンノース　赤-->
+    <Button
+        android:id="@+id/l_Mannose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/button16"
+        android:layout_alignStart="@+id/button16"
+        android:layout_below="@+id/mizuiro"
+        android:background="@drawable/cap_circle_white" />
+
+    <!-- Lフラクトース 青　-->
+    <Button
+        android:id="@+id/l_Fructose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_alignBottom="@+id/mizuiro"
+        android:layout_toLeftOf="@+id/d_Gulitol__l_Glucitol"
+        android:layout_toStartOf="@+id/d_Gulitol__l_Glucitol"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+    <!-- L-グルコース -->
+    <Button
+        android:id="@+id/l_Gulcose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/button9"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_toLeftOf="@+id/d_Gulitol__l_Glucitol"
+        android:layout_toStartOf="@+id/d_Gulitol__l_Glucitol"
+        android:background="@drawable/cap_circle_white" />
+
+
+    <!-- DLの領域 黄色 -->
+
+    <!-- 1 D-グルシトール、L-グリトール -->
+    <Button
+        android:id="@+id/d_Glucitol__l_Gulitol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_alignBaseline="@+id/button18"
+        android:layout_alignBottom="@+id/button18"
+        android:layout_centerHorizontal="true" />
+
+    <!-- 2 ガラクチトール -->
+    <Button
+        android:id="@+id/galactitol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_above="@+id/allitol"
+        android:layout_alignLeft="@+id/d_Glucitol__l_Gulitol"
+        android:layout_alignStart="@+id/d_Glucitol__l_Gulitol" />
+
+    <!-- 3 アリトール-->
+    <Button
+        android:id="@+id/allitol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_above="@+id/d_Iditol"
+        android:layout_alignLeft="@+id/galactitol"
+        android:layout_alignStart="@+id/galactitol" />
+
+    <!-- 4 D-グリトール、L-グルシトール -->
+    <Button
+        android:id="@+id/d_Gulitol__l_Glucitol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/d_Iditol"
+        android:layout_alignLeft="@+id/allitol"
+        android:layout_alignStart="@+id/allitol" />
+
+
+    <!--Dの領域-->
+
+    <!--Dグルコース 赤-->
+    <Button
+        android:id="@+id/d_Gulcose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/button15"
+        android:layout_alignBottom="@+id/button15"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignStart="@+id/button9"
+        android:background="@drawable/cap_circle_white" />
+
+    <!--Dフラクトース 青-->
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/d_Sorbose"
+        android:layout_alignStart="@+id/d_Sorbose" />
+
+    <!--Dマンノース　赤-->
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_alignTop="@+id/orange"
+        android:layout_toLeftOf="@+id/d_Altritol__d_Talitol"
+        android:layout_toStartOf="@+id/d_Altritol__d_Talitol" />
+
+
+    <!--Dアロース　赤　-->
+    <Button
+        android:id="@+id/d_Allose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button20"
+        android:layout_toEndOf="@+id/mizuiro"
+        android:layout_toRightOf="@+id/mizuiro"
+        android:background="@drawable/cap_circle_white" />
+
+    <!-- Dプシコース　青　-->
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_alignBaseline="@+id/l_Iditol"
+        android:layout_alignBottom="@+id/l_Iditol"
+        android:layout_alignRight="@+id/mizuiro"
+        android:layout_alignEnd="@+id/mizuiro" />
+
+    <!-- D-マン二トール　黄色　-->
+    <Button
+        android:id="@+id/d_Mannitol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/galactitol"
+        android:layout_alignLeft="@+id/d_Iditol"
+        android:layout_alignStart="@+id/d_Iditol"
+
+        android:background="@drawable/cap_circle_white"/>
+
+    <!--Dアルトロース　赤 -->
+    <Button
+        android:id="@+id/d_Altrose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_above="@+id/d_Altritol__d_Talitol"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <!--D-タリトール、D-アルトリトール 黄色-->
+    <Button
+        android:id="@+id/d_Altritol__d_Talitol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_alignBaseline="@+id/orange"
+        android:layout_alignBottom="@+id/orange"
+        android:layout_toLeftOf="@+id/button6"
+        android:layout_toStartOf="@+id/button6" />
+
+    <!--D-タロース　赤　-->
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_red"
+        android:layout_below="@+id/d_Altritol__d_Talitol"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!--D-タガトース　青 -->
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_above="@+id/d_Sorbose"
+        android:layout_alignRight="@+id/mizuiro"
+        android:layout_alignEnd="@+id/mizuiro" />
+
+    <!-- Dガラクトース　赤　-->
+    <Button
+        android:id="@+id/d_Galactose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button22"
+        android:layout_toEndOf="@+id/mizuiro"
+        android:layout_toRightOf="@+id/mizuiro"
+        android:background="@drawable/cap_circle_white" />
+
+    <!-- D-イディトール　黄色　-->
+    <Button
+        android:id="@+id/d_Iditol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/d_Sorbose"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignStart="@+id/button9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <!-- D-イドース　赤　-->
+    <Button
+        android:id="@+id/d_Idose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mizuiro"
+        android:layout_toEndOf="@+id/d_Sorbose"
+        android:layout_toRightOf="@+id/d_Sorbose"
+        android:background="@drawable/cap_circle_white" />
+
+
+    <!--D-ソルボース　青　-->
+    <Button
+        android:id="@+id/d_Sorbose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignBottom="@+id/mizuiro"
+        android:layout_toRightOf="@+id/button9"
+        android:layout_toEndOf="@+id/button9"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignStart="@+id/button9" />
+
+    <!-- D-グロース　赤　-->
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mizuiro"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3"
+        android:background="@drawable/cap_circle_white" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cap_circle_white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_above="@+id/d_Altritol__d_Talitol"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
